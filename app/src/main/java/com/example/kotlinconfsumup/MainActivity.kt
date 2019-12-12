@@ -27,7 +27,8 @@ class MainActivity : AppCompatActivity() {
             "3. Kotlin 1.4 to arrive in spring 2020" +
                     "I will speak about this more in the next section \n"
         )
-        list_of_conclusions.text = listOfConclusions.toString()
+        val result = listOfConclusions.joinToString()
+        list_of_conclusions.text = result
     }
 
     private fun loadChangesInNewVersionOfKotlin() {
@@ -53,7 +54,9 @@ class MainActivity : AppCompatActivity() {
                     "* SAM (single abstract method) conversions for Kotlin classes" +
                     "* Mixing named and positional arguments \n"
         )
-        list_of_kotlin_improvements.text = listOfKotlinImprovements.toString()
+
+        val result = listOfKotlinImprovements.joinToString()
+        list_of_kotlin_improvements.text = result
     }
 
     private fun loadTalkGoldenHammer() {
