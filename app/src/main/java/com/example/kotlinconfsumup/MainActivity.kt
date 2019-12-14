@@ -60,7 +60,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun loadTalkGoldenHammer() {
-        // TODO change body of created functions use File | Settings | File Templates.
+        val mainPoints: List<String> = listOf(
+            "1.  \n",
+            "2.  \n",
+            "3.  \n",
+            "4.  \n"
+        )
+
+        val result = mainPoints.joinToString()
+        golden_hammer_main_points.text = result
     }
 
     private fun loadTalkWillWeStillUseKotlin() {
