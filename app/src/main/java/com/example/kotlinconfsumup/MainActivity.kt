@@ -3,12 +3,18 @@ package com.example.kotlinconfsumup
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
+import java.util.*
 
+@Suppress("DEPRECATION")
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val startDate: Date = Date(2019,12,4)
+        val endDate: Date = Date(2019,12,6)
+        val location: String = "Kopenhagen"
 
         loadMainConclusions()
         loadChangesInNewVersionOfKotlin()
