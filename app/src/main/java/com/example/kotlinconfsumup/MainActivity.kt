@@ -14,7 +14,6 @@ class MainActivity : AppCompatActivity() {
         loadChangesInNewVersionOfKotlin()
         loadTalkGoldenHammer()
         loadTalkWillWeStillUseKotlin()
-        loadTalkJetpackCompose()
     }
 
     private fun loadMainConclusions() {
@@ -32,6 +31,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun loadChangesInNewVersionOfKotlin() {
+        val speaker = "Andrey Breslav"
         val listOfKotlinImprovements: List<String> = listOf(
             "1. Focus on quality and performance: " +
                     "* Boosting IDE performance - Faster code completion" +
@@ -60,6 +60,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun loadTalkGoldenHammer() {
+        val speaker = "Huyen Tue Dao"
         val mainPoints: List<String> = listOf(
             "1.  \n",
             "2.  \n",
@@ -72,10 +73,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun loadTalkWillWeStillUseKotlin() {
-        // TODO change body of created functions use File | Settings | File Templates.
-    }
-
-    private fun loadTalkJetpackCompose() {
+        val speaker = "Jake Wharton"
         // TODO change body of created functions use File | Settings | File Templates.
     }
 }
