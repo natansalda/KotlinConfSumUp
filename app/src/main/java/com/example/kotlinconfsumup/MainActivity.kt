@@ -60,7 +60,6 @@ class MainActivity : AppCompatActivity() {
                     "* SAM (single abstract method) conversions for Kotlin classes" +
                     "* Mixing named and positional arguments \n"
         )
-
         val result = listOfKotlinImprovements.joinToString()
         list_of_kotlin_improvements.text = result
     }
@@ -68,18 +67,29 @@ class MainActivity : AppCompatActivity() {
     private fun loadTalkGoldenHammer() {
         val speaker = "Huyen Tue Dao"
         val mainPoints: List<String> = listOf(
-            "1.  \n",
-            "2.  \n",
-            "3.  \n",
-            "4.  \n"
+            "When we learn new language - like Kotlin - all new amazing features seem to be a golden hammer," +
+                    "something we feel the need to use all the time." +
+                    "However sometimes we may overuse and even abuse the use of those features. \n",
+            "1. Type inference: Always think if this is safe to hide type. \n",
+            "2. It keyword: similar as above - think if this is safe to use all the time. \n",
+            "3. Scope functions: try to not nest them, it may become unreadable quickly \n",
+            "4. Extension functions: don't overuse them \n",
+            "Sum up: focus not only on readability but also on maintainability of your code"
         )
-
         val result = mainPoints.joinToString()
         golden_hammer_main_points.text = result
     }
 
     private fun loadTalkWillWeStillUseKotlin() {
         val speaker = "Jake Wharton"
-        // TODO change body of created functions use File | Settings | File Templates.
+        val mainPoints: List<String> = listOf(
+            "1.  Java 19 will most probably release around September 2022, and it will bring a lot of interesting features," +
+                    "as well as some earlier Java versions will.",
+            "2.  \n",
+            "3.  \n",
+            "4.  \n"
+        )
+        val result = mainPoints.joinToString()
+        java_19_main_points.text = result
     }
 }
