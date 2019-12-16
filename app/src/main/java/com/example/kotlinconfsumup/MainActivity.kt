@@ -69,11 +69,12 @@ class MainActivity : AppCompatActivity() {
         val mainPoints: List<String> = listOf(
             "When we learn new language - like Kotlin - all new amazing features seem to be a golden hammer," +
                     "something we feel the need to use all the time." +
-                    "However sometimes we may overuse and even abuse the use of those features. \n",
-            "1. Type inference: Always think if this is safe to hide type. \n",
+                    "However, sometimes we may overuse and even abuse the use of those features. \n",
+            "1. Type inference: Always think if this is safe to hide type \n",
             "2. It keyword: similar as above - think if this is safe to use all the time. \n",
             "3. Scope functions: try to not nest them, it may become unreadable quickly \n",
-            "4. Extension functions: don't overuse them \n",
+            "4. Extension functions: don't overuse them," +
+                    "they are meant to extent API without subclassing them\n",
             "Sum up: focus not only on readability but also on maintainability of your code"
         )
         val result = mainPoints.joinToString()
@@ -85,9 +86,15 @@ class MainActivity : AppCompatActivity() {
         val mainPoints: List<String> = listOf(
             "1.  Java 19 will most probably release around September 2022, and it will bring a lot of interesting features," +
                     "as well as some earlier Java versions will.",
-            "2.  \n",
-            "3.  \n",
-            "4.  \n"
+            "2.  Multiline String formatting will be possible- very useful for SQL queries etc. " +
+                    "Partially already available in Java 13 \n",
+            "3. Java will introduce 'record' keyword, which is almost the same as data class." +
+                    "Will provide getter, setter, toString(), hashCode(), equals() \n",
+            "4. Type matching: in Kotlin 'i is Int', in Java 'i instanceOf Integer' \n",
+            "5. SO will we still need Kotlin? " +
+                    "YES! Kotlin itself will evolve too, it will take some time to Java to introduce all this" +
+                    "and as Kotlin runs on JVM, new API and VM will only help Kotlin. " +
+                    "ALSO - there is no plans to tackle nullability in Java as for now"
         )
         val result = mainPoints.joinToString()
         java_19_main_points.text = result
