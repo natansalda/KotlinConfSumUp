@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
 
         val startDate: Date = Date(2019,12,4)
         val endDate: Date = Date(2019,12,6)
-        val location: String = "Kopenhagen"
+        val location: String = "Copenhagen"
 
         loadMainConclusions()
         loadChangesInNewVersionOfKotlin()
